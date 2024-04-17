@@ -24,7 +24,6 @@
   --font-size-text: 1.15rem;
   --border-radius: 8px;
 }
-
 /*
  * [Modified] Modern CSS Reset
  * @link https://github.com/hankchizljaw/modern-css-reset
@@ -35,7 +34,6 @@
 *::after {
   box-sizing: border-box;
 }
-
 /* Remove default margin */
 body,
 h1,
@@ -46,11 +44,9 @@ h5,
 h6 {
   margin: 0;
 }
-
 html {
   overflow-x: hidden;
 }
-
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -58,16 +54,12 @@ body {
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   overflow-x: hidden;
-  
-  
 }
-
 /* Make images easier to work with */
 img {
   display: block;
   max-width: 100%;
 }
-
 /* Inherit fonts for inputs and buttons */
 input,
 button,
@@ -75,7 +67,6 @@ textarea,
 select {
   font: inherit;
 }
-
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -93,67 +84,49 @@ h4 {
   line-height: 1;
   margin-bottom: 0.65em;
 }
-
 h1 {
   font-size: var(--font-size-h1);
   font-size: clamp(2rem, 7vw, var(--font-size-h1));
 }
-
 h2 {
   font-size: var(--font-size-h2);
   font-size: clamp(3rem, 5vw, var(--font-size-h2));
   text-align: center;
 }
-
 #main h2 {
   background-color: var(--color-secondary);
   font-weight: 150;
   color: var(--color-background);
   padding: 0em 0em;
   align-items: center;
- 
   box-shadow: 0.15em 0.15em var(--color-primary);
-
 }
-
-
-
 h3 {
   font-size: var(--font-size-h3);
 }
-
 h4 {
   font-size: var(--font-size-h4);
 }
-
 p,
 li {
   font-size: var(--font-size-text);
 }
-
 article{
   flex: 70%;
   padding: 20px;
   display: flex;
   text-wrap: wrap;
   font-size: 1vw;
- 
 }
-
 article p:not(blockquote > p) {
   margin: 0 0 3rem;
   font-size: 1.2rem;
   text-align: center;
-  
   padding: 5px;
   border: 5px solid var(--color-primary);
   box-shadow: 0.25em 0.25em var(--color-secondary);
   border-radius: 10px;
-
 }
-
-
-
 article .container > ul:not(.features) > li + li,
 article .container > ol > li + li {
   margin-top: 1rem;
@@ -164,15 +137,12 @@ article .container * + h2 {
 article .container * + h3 {
   margin-top: 2rem;
 }
-
 strong {
   font-weight: var(--font-weight-strong);
 }
-
 a {
   color: var(--color-anchor);
 }
-
 blockquote {
   position: relative;
   display: flex;
@@ -183,7 +153,6 @@ blockquote {
   margin-right: -1.5rem;
   color: var(--color-primary);
 }
-
 blockquote p {
   margin-bottom: 0;
   padding: 0.5em;
@@ -204,52 +173,41 @@ blockquote::before {
   transform: scale(1);
   content: "";
 }
-
 @media (max-width: 60rem) {
   blockquote::after {
     transform: translate(25%, 55%) rotate(-5deg);
   }
 }
-
 #guidelines p:nth-of-type(1),
 #contribute p:nth-of-type(1) {
   font-size: var(--font-size-h4);
   font-weight: var(--font-weight-strong);
 }
-
 body {
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-family);
-  
 }
 .row {  
   display: flex;
   flex-wrap: wrap;
 }
-
-
 /* Main column */
 main {
-  flex: 70%;
-  
+  flex: 70%; 
   padding: 20px;
 }
-
 main:focus {
   outline: none;
 }
 main h3 {
   color: var(--color-primary);
 }
-
 article section {
   display: flex;
   flex-direction: column;
   padding-top: 2vh;
-  
 }
-
 article .container,
 .page-footer .container,
 #styles .container {
@@ -258,12 +216,13 @@ article .container,
   margin-right: auto;
   margin-left: auto;
 }
-
 article,
 #styles {
-  padding: 1rem;
+  padding: 0rem;
 }
-
+aside#styles * li{
+    animation: moveUpDown 3s infinite alternate;
+}
 .page-footer ul,
 .features {
   display: grid;
@@ -272,9 +231,7 @@ article,
   grid-gap: 1em;
   list-style: none;
 }
-
 header {
-  
   --logomark-padding: 0 0em;
   display: grid;
   min-height: 40vh;
@@ -300,7 +257,6 @@ header {
     transform: translateY(0);
   }
 }
-
 header h1 {
   display: inline-grid;
   min-height: var(--logomark-height);
@@ -308,7 +264,6 @@ header h1 {
   text-shadow: 2px 2px 4px rgba(10, 178, 203, 0.765); /* Shadow properties */
   animation: moveUpDown 3s infinite alternate; /* Adjust animation duration and timing as needed */
 }
-
 header h2 {
   max-width: 30ch;
   position: relative; /* Setting position to relative */
@@ -322,8 +277,6 @@ header p{
   text-shadow: 2px 2px 4px rgba(10, 178, 203, 0.765); /* Shadow properties */
   top: -15px; /* Adjust this value to move it closer to h1 */
 }
-
-
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -339,18 +292,15 @@ nav ul a {
   text-decoration: none;
   text-align: center;
 }
-
 nav a:hover{
   background-color: #d4ead2;
   color: rgb(0, 0, 0);
 }
-
 #about section:nth-child(2) ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0rem 0 2rem;
-
   margin-left: 20px;
   padding: 0;
   list-style: none;
@@ -360,36 +310,28 @@ nav a:hover{
   padding: 0.25em 0.5em;
   background-color: var(--color-light);
 }
-
 @media (max-width: 35rem) {
   #about section:nth-child(2)::before {
     transform: scale(2) translate(-25%, -25%);
   }
 }
-
 #guidelines h3{
   visibility: hidden;
 }
 #guidelines{
-  
   float: left;
   width: 45%;
   padding-right: 15px;
 }
 @supports (background-clip: text) or (-webkit-background-clip: text) {
-
-
 }
 #guidelines .container > a {
-  align-self: center;
-  
+  align-self: center; 
 }
-
 #contribute {
   background: repeating-linear-gradient(-50deg, transparent, transparent 15px, #00a6ff 10px, #04ff08 18px);
   flex-wrap: wrap;
 }
-
 #contribute section {
   padding: 1.5rem;
   background-color: var(--color-background);
@@ -397,7 +339,6 @@ nav a:hover{
 #contribute section:nth-child(2) {
   padding-top: 5px;
 }
-
 #files {
   display: grid;
   place-content: center;
@@ -421,7 +362,6 @@ nav a:hover{
 #files .container a:not(:last-child):not(.link-codepen) {
   font-size: clamp(1.5rem, 4vw, 2rem);
 }
-
 .features {
   position: relative;
   width: 100%;
@@ -466,7 +406,6 @@ nav a:hover{
 .features li > span span:nth-child(2) {
   position: relative;
 }
-
 #styles {
   margin: 3vh 0 10vh;
   text-align: center;
@@ -476,7 +415,6 @@ nav a:hover{
   color: var(--color-primary);
  
 }
-
 #styles .features li,
 .features.patterned li {
   background-color: var(--color-primary-alt);
@@ -497,9 +435,6 @@ nav a:hover{
 .features.patterned li:nth-child(3) {
   background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23fff' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
-
-
-
 .profile {
   width: 95vw;
   max-width: 80ch;
@@ -569,7 +504,6 @@ nav a:hover{
     margin-right: 0;
   }
 }
-
 .page-footer {
   --logomark-padding: 0;
   position: relative;
@@ -579,7 +513,6 @@ nav a:hover{
   background-repeat: repeat-x;
   background-position: center -34px;
   color: var(--color-light);
- 
 }
 .page-footer::before {
   display: inline-grid;
@@ -605,6 +538,13 @@ nav a:hover{
 }
 .page-footer p a {
   color: inherit;
+  font-style: italic;
+  font-family: cursive;
+}
+.page-footer p  {
+  color: inherit;
+  font-weight: bold;
+  font-family: cursive;
 }
 .page-footer ul {
   grid-template-columns: repeat(auto-fit, minmax(12ch, auto));
@@ -612,7 +552,6 @@ nav a:hover{
 .page-footer .container > :last-child {
   margin-bottom: 0;
 }
-
 .skip-link {
   position: absolute;
   top: auto;
@@ -632,17 +571,14 @@ nav a:hover{
   height: auto;
   padding: 0.5em;
 }
-
 [class^=link]:not(.link-codepen) {
   min-height: 2em;
   margin-top: 25px;
   background-color: var(--color-primary);
   color: #ff003c;
-  
   animation: moveUpDown 3s infinite alternate;
   box-shadow: 0.4em 0.2em var(--color-secondary);
 }
-
 [class^=link]:not(.link-codepen),
 .profile .container > a {
   display: inline-flex;
@@ -667,32 +603,17 @@ nav a:hover{
   outline-color: transparent;
   outline-style: solid;
 }
-
 .page-footer [class^=link] {
   width: 100%;
   min-height: 2.5em;
   background-color: var(--color-background);
   color: var(--color-primary);
 }
-
 .link-codepen {
   display: block;
   margin-top: 3rem;
   font-size: var(--font-size-h4);
 }
-.link-codepen::before {
-  position: absolute;
-  padding-right: 1.25em;
-  transform: translate(15%, -90%) rotate(-3deg);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 79.6 187.1'%3E%3Cpath fill='%236f6ffd' d='M12 131l-2 13-3 26a10 10 0 000 2 1 1 0 001 0 24 24 0 002-3 37 37 0 016-8 73 73 0 007-9l24-33 4-5a70 70 0 006-7l15-20a8 8 0 001-1 1 1 0 000-1 16 16 0 00-2-1l-8-3a69 69 0 01-13-6 7 7 0 00-1-1l-16-6-13-7a57 57 0 00-10-4 17 17 0 01-2-1 2 2 0 01-1-4 18 18 0 012-2 93 93 0 0011-13 95 95 0 018-8l10-11a32 32 0 003-4c3-5 7-9 12-13a12 12 0 011-1 1 1 0 012 0 2 2 0 010 2 27 27 0 01-3 3 104 104 0 00-10 12 115 115 0 01-11 13 102 102 0 00-11 13 78 78 0 01-5 7l-2 2a1 1 0 000 1l19 8 9 4 3 2a77 77 0 0113 5 22 22 0 003 2l17 8a8 8 0 011 1 2 2 0 010 2 22 22 0 01-1 3l-11 14a33 33 0 00-2 3 98 98 0 01-10 13l-5 7-23 31a87 87 0 01-7 9 60 60 0 00-6 8l-2 3a1 1 0 000 1l9-4 12-6 10-6 13-7a10 10 0 012 0 2 2 0 012 1 2 2 0 010 3 24 24 0 01-3 1l-8 4-20 11-24 12a19 19 0 01-2 1 2 2 0 01-3-2 10 10 0 010-2l1-7 3-24 3-21a39 39 0 011-5 2 2 0 013-1 2 2 0 011 2v4z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 130%;
-  background-size: 14%;
-  color: #6f6ffd;
-  font-size: 0.85em;
-  content: "Jump right in";
-}
-
 .link-allstyles {
   font-size: var(--font-size-h4);
 }
@@ -701,7 +622,6 @@ nav a:hover{
     margin-left: 6rem;
   }
 }
-
 .link-github svg {
   width: 1.2em;
   height: 1.2em;
