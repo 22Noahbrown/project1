@@ -548,6 +548,7 @@ nav a:hover{
 }
 @media (min-width: 180ch) {
   .profile {
+    visibility: hidden;
     position: fixed;
     right: 2vmin;
     bottom: 2vmin;
